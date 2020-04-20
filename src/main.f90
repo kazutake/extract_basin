@@ -109,6 +109,8 @@
 		.or. (idir(ip0,jp0) == 64) &
 		.or. (idir(ip0,jp0) == 128) &
 		.or. (idir(ip0,jp0) == 0) &
+		.or. (idir(ip0,jp0) == 255) &
+		.or. (idir(ip0,jp0) == -1) &
 	)then
 		!write(*,*) ip0, jp0
 		ibasin(ip0,jp0) = 1
